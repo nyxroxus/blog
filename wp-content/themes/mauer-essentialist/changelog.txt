@@ -1,0 +1,10 @@
+___
+Essentialist 1.0.
+- Initial release
+
+___
+Essentialist 1.0.1
+- Better custom logo experience
+- Better related posts experience
+- Minor fixes and improvements
+

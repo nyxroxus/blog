@@ -1,0 +1,10 @@
+
+#setting-error-tgmpa.update-nag {
+	display: block;
+}
+
+/* custom logo image field */
+.acf-field-56a51281d76f9 img {
+	max-width:500px;
+	max-height:200px;
+}
