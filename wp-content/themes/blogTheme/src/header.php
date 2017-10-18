@@ -36,7 +36,7 @@
 					</div>
 
 					<nav class="dib fr tr mt5 w-80" role="navigation">
-						<div class="w-70 mr5 dib" id="wd-info">
+						<div class="w-70 dib" id="wd-info">
 							<?php html5blank_nav(); ?>
 						</div>
 

@@ -61,38 +61,15 @@
   box-sizing: border-box;
 }
 /* Custom navigation menu css */
-
-.menu-item-home{
-  background-image: url('img/navIcons/home.png');
-  background-size: 40px 40px;
-  background-repeat: no-repeat;
-  background-position: left;
-  padding-left: 5px;
-  padding: 3px 0 3px 0;
-}
-.menu-item-story{
-  background-image: url('img/navIcons/open-book.png');
-  background-size: 40px 40px;
-  background-repeat: no-repeat;
-  background-position: left;
-  padding-left: 1px;
-  margin-left: 50px;
-  padding: 3px 0 3px 0;
-}
-.menu-item-about{
-  background-image: url('img/navIcons/user.png');
-  background-size: 40px 40px;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-left: 5px;
-  padding: 3px 0 3px 0;
-}
 .menu-item{
   font-family: 'Kaushan Script', cursive;
 }
 .menu-item a{
+  padding: 3px 40px 3px 40px;
+  border: 1px solid gray;
+  border-radius: 20px;
   color: gray!important;
-  opacity: 0;
+  opacity: 1;
 }
 
 /* Custom navigation menu css */
@@ -114,7 +91,7 @@ img {
 }
 
 a {
-  color: white;
+  color: gray;
   text-decoration: none;
 }
 a:focus, a:hover {

@@ -439,6 +439,7 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 
 /*------------------------------------*\
     Custom Post Types
+    
 \*------------------------------------*/
 
 // Create 1 Custom Post type for a Demo, called HTML5-Blank
