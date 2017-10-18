@@ -9,7 +9,7 @@
 			</div>
 			<div class="br3 bg-gray pa3 blacl red ph3 mt2 bg-red daadwwdb" style="max-width:900px;">
 				<?php get_template_part('loop'); ?>
-				dwlhajwdap
+				dwlhajwdapsdasda
 			</div>
 
 			<?php get_template_part('pagination'); ?>
