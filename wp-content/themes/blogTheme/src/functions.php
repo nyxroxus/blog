@@ -83,7 +83,7 @@ function html5blank_nav()
         'after'           => '',
         'link_before'     => '',
         'link_after'      => '',
-        'items_wrap'      => '<ul class="dib f2">%3$s</ul>',
+        'items_wrap'      => '<ul class="dib f3">%3$s</ul>',
         'depth'           => 0,
         'walker'          => ''
         )
@@ -439,7 +439,7 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 
 /*------------------------------------*\
     Custom Post Types
-    
+
 \*------------------------------------*/
 
 // Create 1 Custom Post type for a Demo, called HTML5-Blank

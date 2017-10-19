@@ -8,6 +8,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 
@@ -67,19 +68,4 @@
 	</div>
 </div>
 
-<div class="section-logo-area">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12">
-				<div class="site-logo text-center<?php if (function_exists('get_field')) { if (get_field('logo_to_use', 'option') == 'image') { echo " image-logo-wrapper";} else { echo " text-logo-wrapper"; } } ?>">
-					<a href="<?php echo esc_url(home_url('/')); ?>" class="logo-link">
-						<?php mauer_display_header_logo(); ?>
-					</a>
-				</div>
-				<?php if ( !(function_exists('get_field') && get_field('hide_site_desc', 'option')) ): ?>
-					<div class="site-desc text-center"><?php echo get_bloginfo('description'); ?></div>
-				<?php endif ?>
-			</div>
-		</div>
-	</div>
-</div>
+

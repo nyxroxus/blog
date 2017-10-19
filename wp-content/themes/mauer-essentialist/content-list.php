@@ -1,18 +1,19 @@
 <?php
+<?php
 /*
  * Posts list
  */
 ?>
 
-<div class="posts-list-layout-list">
+<div class="posts-list-layout-list ba bg-red">
 
 	<?php if ( have_posts() ) : ?>
 		<?php global $wp_query; ?>
 		
-		<div class="row">
+		<div class="ba bg-gray" style="color: white!important;">
 		<?php  while ( have_posts() ) : the_post(); ?>
 
-			<div class="col-xs-12">
+			<div class="">
 				<div <?php post_class('post-card big'); ?>>	
 					<a href="<?php the_permalink(); ?>" class="entry-thumb-link">
 						<div class="entry-thumb-wrapper">
@@ -20,17 +21,18 @@
 							<div class="entry-thumb-overlay"></div>
 						</div>
 					</a>
-					<div class="row">
+					<div class="">
 
-						<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 text-center">
-							<div class="entry-meta">
+						<div class="">
+							
+							<h1 class="f1 tl"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+							<div class="">
+								<?php if (is_search() || (function_exists('get_field') && get_field('automatic_excerpts', 'option')) && !strpos($post->post_content, '<!--more-->')) {the_excerpt();} else {the_content();} ?>
+							</div>
+                            <div class="">
 								<span class="entry-date"><a href="<?php the_permalink(); ?>"><?php echo get_the_date(); ?></a><?php if (is_sticky()): ?> &mdash; <?php endif ?></span>
 								<?php if (is_sticky()): ?><span class="entry-sticky"><i class="fa fa-sticky-note-o"></i>&nbsp;&nbsp;<?php esc_html_e('Sticky', 'mauer-essentialist') ?></span><?php endif ?>
 								<?php if (has_category()): ?><span class="entry-cats"><?php echo get_the_category_list( esc_html_x( ', ', 'blog entry categories separator', 'mauer-essentialist' ) ); ?></span><?php endif ?>
-							</div>
-							<h1 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-							<div class="entry-excerpt clearfix">
-								<?php if (is_search() || (function_exists('get_field') && get_field('automatic_excerpts', 'option')) && !strpos($post->post_content, '<!--more-->')) {the_excerpt();} else {the_content();} ?>
 							</div>
 						</div>
 

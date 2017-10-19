@@ -246,7 +246,7 @@ if (!function_exists('mauer_get_layout_setting')) :
 		if (isset($_GET["demo_layout"])) {$layout_style = $_GET["demo_layout"];}
 		if (isset($_GET["demo_big_latest"])) {$big_latest = $_GET["demo_big_latest"];}
 
-		$possible_layouts = array("grid_2_cols", "grid_3_cols", "list", "masonry");
+		$possible_layouts = array("grid_2_cols", "grid_3_cols", "list", "masonry", "list_two_column");
 
 		if (isset($layout_style) && in_array($layout_style, $possible_layouts)) {
 			$r["layout_style"] = $layout_style;
@@ -356,7 +356,7 @@ add_filter('the_content_more_link', 'mauer_prevent_wp_from_jumping_to_anchor');
 
 
 if (!function_exists('mauer_theme_more_link')) :
-
+/* READ MORE button EDIT HERE */
 	function mauer_theme_more_link($more_link, $more_link_text = "") {
 		global $post;
 		ob_start(); ?>
@@ -921,7 +921,7 @@ if (!function_exists('mauer_modify_main_query')) :
 			if (isset($_GET["demo_layout"])) {
 				$demo_layout_style = $_GET["demo_layout"];
 				switch ($demo_layout_style) {
-					case 'grid_2_cols':
+                    case 'grid_2_cols': case 'list_two_column':
 						$posts_per_page_for_demo = 8;
 						break;
 					case 'grid_3_cols': case 'masonry':

@@ -28,14 +28,15 @@
 							<div class="row">
 
 								<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 text-center">
-									<div class="entry-meta">
-										<span class="entry-date"><a href="<?php the_permalink(); ?>"><?php echo get_the_date(); ?></a><?php if (is_sticky()): ?> &mdash; <?php endif ?></span>
-										<?php if (is_sticky()): ?><span class="entry-sticky"><i class="fa fa-sticky-note-o"></i>&nbsp;&nbsp;<?php esc_html_e('Sticky', 'mauer-essentialist') ?></span><?php endif ?>
-										<?php if (has_category()): ?><span class="entry-cats"><?php echo get_the_category_list( esc_html_x( ', ', 'blog entry categories separator', 'mauer-essentialist' ) ); ?></span><?php endif ?>
-									</div>
+									
 									<h1 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 									<div class="entry-excerpt clearfix">
 										<?php if (is_search() || (function_exists('get_field') && get_field('automatic_excerpts', 'option')) && !strpos($post->post_content, '<!--more-->')) {the_excerpt();} else {the_content();} ?>
+									</div>
+                                    <div class="entry-meta">
+										<span class="entry-date"><a href="<?php the_permalink(); ?>"><?php echo get_the_date(); ?></a><?php if (is_sticky()): ?> &mdash; <?php endif ?></span>
+										<?php if (is_sticky()): ?><span class="entry-sticky"><i class="fa fa-sticky-note-o"></i>&nbsp;&nbsp;<?php esc_html_e('Sticky', 'mauer-essentialist') ?></span><?php endif ?>
+										<?php if (has_category()): ?><span class="entry-cats"><?php echo get_the_category_list( esc_html_x( ', ', 'blog entry categories separator', 'mauer-essentialist' ) ); ?></span><?php endif ?>
 									</div>
 								</div>
 
@@ -55,23 +56,24 @@
 			<div class="row">
 				<div class="msnry-grid"><div class="msnry-grid-sizer col-xs-12 col-sm-6 col-md-4"></div>
 			<?php endif ?>
-
+                   
 					<div class="msnry-grid-item col-xs-12 col-sm-6 col-md-4">
 						<div class="msnry-grid-item-content">
 
-							<div <?php post_class('post-card small'); ?>>	
+							<div class="" <?php post_class('post-card small'); ?>>	
 								<a href="<?php the_permalink(); ?>" class="entry-thumb-link">
 									<?php the_post_thumbnail('mauer_thumb_3_softcropped'); ?>
 									<div class="entry-thumb-overlay"></div>
 								</a>
-								<div class="entry-meta">
+								
+								<h1 class="entry-title f2"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+								<div class="entry-excerpt clearfix pa3" style="color: gray!important;">
+									<?php if (is_search() || (function_exists('get_field') && get_field('automatic_excerpts', 'option')) && !strpos($post->post_content, '<!--more-->')) {the_excerpt();} else {the_content();} ?>
+								</div>
+                                <div class="entry-meta pa3">
 									<span class="entry-date"><a href="<?php the_permalink(); ?>"><?php echo get_the_date(); ?></a><?php if (is_sticky()): ?> &mdash; <?php endif ?></span>
 									<?php if (is_sticky()): ?><span class="entry-sticky"><i class="fa fa-sticky-note-o"></i>&nbsp;&nbsp;<?php esc_html_e('Sticky', 'mauer-essentialist') ?></span><?php endif ?>
 									<?php if (has_category()): ?><span class="entry-cats"><?php echo get_the_category_list( esc_html_x( ', ', 'blog entry categories separator', 'mauer-essentialist' ) ); ?></span><?php endif ?>
-								</div>
-								<h1 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-								<div class="entry-excerpt clearfix">
-									<?php if (is_search() || (function_exists('get_field') && get_field('automatic_excerpts', 'option')) && !strpos($post->post_content, '<!--more-->')) {the_excerpt();} else {the_content();} ?>
 								</div>
 							</div><!-- /.post-card -->
 
