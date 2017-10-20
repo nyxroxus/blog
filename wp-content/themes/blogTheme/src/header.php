@@ -31,6 +31,7 @@
 					<div class="dib logo w-20 mt3">
 						<a href="<?php echo home_url(); ?>">
 							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
+                            <!-- Test -->
 							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="logo-img">
 						</a>
 					</div>
