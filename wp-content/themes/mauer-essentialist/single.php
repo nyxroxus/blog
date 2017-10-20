@@ -18,7 +18,7 @@
 
 
 							<div class="row">
-								<div class="col-md-8 col-md-offset-2">
+								<div class="col-md-3 col-md-offset-2">
 
 									<div class="entry-meta text-center add-padding-on-small-resolutions">
 										<span class="entry-date"><a href="<?php the_permalink(); ?>"><?php echo get_the_date(); ?></a></span>

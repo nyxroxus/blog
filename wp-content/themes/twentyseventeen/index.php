@@ -23,9 +23,7 @@ get_header(); ?>
 			<h1 class="page-title"><?php single_post_title(); ?></h1>
 		</header>
 	<?php else : ?>
-	<header class="page-header">
-		<h2 class="page-title"><?php _e( 'Posts', 'twentyseventeen' ); ?></h2>
-	</header>
+	
 	<?php endif; ?>
 
 	<div id="primary" class="content-area">
@@ -61,7 +59,6 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-	<?php get_sidebar(); ?>
 </div><!-- .wrap -->
 
 <?php get_footer();

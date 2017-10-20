@@ -202,7 +202,7 @@ if (!function_exists('mauer_wp_nav_menu')) :
 		$menu_args = array(
 			'depth' => 2,
 			'container' => false,
-			'menu_class' => 'nav navbar-nav',
+			'menu_class' => 'nav navbar-nav f2',
 			'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
 			'walker' => new wp_bootstrap_navwalker()
 		);

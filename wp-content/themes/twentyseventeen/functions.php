@@ -241,7 +241,7 @@ function twentyseventeen_content_width() {
 
 	// Check if is single post and there is no sidebar.
 	if ( is_single() && ! is_active_sidebar( 'sidebar-1' ) ) {
-		$content_width = 740;
+		$content_width = 1740;
 	}
 
 	/**

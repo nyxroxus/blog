@@ -39,7 +39,7 @@
 				<div class="menu-stripe-wrapper">
 
 					<nav class="navbar navbar-default navbar-static-top mauer-navbar">
-						<div class="navbar-header">
+						<div class="navbar-header f2">
 							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 								<span class="sr-only"><?php echo esc_html__( 'Toggle navigation', 'mauer-essentialist' ); ?></span>
 								<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
@@ -58,7 +58,7 @@
 					</div>
 
 					<div class="search-link search-link-in-the-corner">
-						<a class="search-popup-opener" href=""><i class="fa fa-search"></i><span class="search-link-text"></span></a>
+						<a class="search-popup-opener f2" href=""><i class="fa fa-search"></i><span class="search-link-text"></span></a>
 					</div>	
 
 				</div>
