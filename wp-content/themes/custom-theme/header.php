@@ -18,12 +18,12 @@
 <div class="w-90 center">
     <div class="w-30-l w-70 fl fl-l" style="">
         <div class="">
-            <h1 class="custom-padding-menu f3"><?php echo get_bloginfo( 'name' ) ?></h1>
+            <h1 class="custom-padding-menu f3"><a class="link" href="<?php echo get_bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ) ?></a></h1>
         </div>
     </div>
 
     <div class="w-70-l fr-l dn dib-l" style="">
-        <h1 class="f4-l f5 tr-l"><a class="pulse" href="#"><?php wp_list_pages( '&title_li=' ); ?></a></h1> 
+        <h1 class="f4-l f5 tr-l"><a class="" href="#"><?php wp_list_pages( '&title_li=' ); ?></a></h1> 
     </div>
     <div class="w-30 fr mt2 dib dn-l">
         <i class="pointer fa fa-bars fa-3x fr custom-padding-menu"></i>
