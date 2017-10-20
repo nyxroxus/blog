@@ -27,11 +27,23 @@
 
 		<!-- wrapper -->
 		<div class="wrapper">
-			<header class="clear" role="banner">
-						<div class="dib w-50 w-20-l ">
-							<a href="<?php echo home_url(); ?>">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="">
-							</a>
+			<header class="header clear w-80 center" role="banner">
+					<div class="dib logo w-20 mt3">
+						<a href="<?php echo home_url(); ?>">
+							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
+                            <!-- Test -->
+							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="Logo" class="logo-img">
+						</a>
+					</div>
+
+					<nav class="dib fr tr mt5 w-80" role="navigation">
+						<div class="w-70 mr5 dib" id="wd-info">
+							<?php html5blank_nav(); ?>
 						</div>
-						<?php echo wp_nav_menu(); ?>
+
+						<!-- Future hamburger menu -->
+						<div class="w-30 dn" style="height:40px; width:40px;">
+							<div class="cursor" id="wd-click">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/navIcons/menu-button.png" alt="" style="height:40px; width:40px;">
+							</div>
 			</header>
