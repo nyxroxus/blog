@@ -46,7 +46,4 @@
 							<div class="cursor" id="wd-click">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/navIcons/menu-button.png" alt="" style="height:40px; width:40px;">
 							</div>
-						</div>
-					</nav>
-
 			</header>

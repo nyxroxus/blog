@@ -386,6 +386,7 @@ img { max-width: 100%; }
    --color-name = each color variable name is also a border color name
 
 */
+.b--pink-red { border-color: #dd2160; }
 .b--black { border-color: #000; }
 .b--near-black { border-color: #111; }
 .b--dark-gray { border-color: #333; }

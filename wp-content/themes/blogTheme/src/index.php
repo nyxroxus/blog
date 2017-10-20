@@ -7,9 +7,8 @@
 			<div class="f3 custom-post-title bb tc">
 				<h1><?php _e( 'Latest Posts', 'html5blank' ); ?></h1>
 			</div>
-			<div class="br3 bg-gray pa3 blacl red ph3 mt2 bg-red daadwwdb" style="max-width:900px;">
+			<div class="br3 bg-gray pa3 ph3 mt2" style="max-width:900px;">
 				<?php get_template_part('loop'); ?>
-				dwlhajwdapsdasda
 			</div>
 
 			<?php get_template_part('pagination'); ?>

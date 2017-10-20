@@ -22,7 +22,7 @@ get_header(); ?>
 
 							<div class="row">
 								<div class="col-md-8 col-md-offset-2">
-									<h1 class="entry-title text-center"><?php the_title(); ?></h1>
+									
 
 									<div class="add-padding-on-small-resolutions">
 										<?php if ( class_exists( 'Jetpack' ) && in_array( 'sharedaddy', Jetpack::get_active_modules()) ) { $class_to_add = " special";} else {$class_to_add = "";} ?>
@@ -31,7 +31,7 @@ get_header(); ?>
 										</div>
 									</div>
 
-									<?php comments_template(); ?>
+									
 
 								</div>
 							</div>

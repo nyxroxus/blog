@@ -1,8 +1,4 @@
-<?php
-/*
-* Single post template
-*/
-get_header(); ?>
+
 
 <div class="section-main-content">
 	<div class="container">
@@ -22,7 +18,7 @@ get_header(); ?>
 
 
 							<div class="row">
-								<div class="col-md-8 col-md-offset-2">
+								<div class="col-md-3 col-md-offset-2">
 
 									<div class="entry-meta text-center add-padding-on-small-resolutions">
 										<span class="entry-date"><a href="<?php the_permalink(); ?>"><?php echo get_the_date(); ?></a></span>
@@ -49,11 +45,11 @@ get_header(); ?>
 												<p><i class="fa fa-tags"></i><?php the_tags(esc_html__('Tags', 'mauer-essentialist') . ':', ', '); ?></p>
 											</div>
 										<?php endif ?>
-							
+
 										<?php comments_template(); ?>
 
 									</div>
-	
+
 								</div>
 							</div>
 
@@ -63,7 +59,7 @@ get_header(); ?>
 						<!-- related -->
 						<?php if (function_exists('get_field')): ?>
 
-							<?php 
+							<?php
 								if (get_field('show_related_posts')) {
 									$related_posts = array();
 									if (get_field('related_posts_mode') == 'auto') {$related_posts = mauer_get_related_posts(get_the_ID(), "category", "", 3);}
@@ -79,7 +75,7 @@ get_header(); ?>
 
 									<?php foreach ($related_posts as $ii => $related_post): ?>
 
-										<?php 
+										<?php
 											global $post;
 											$post = $related_post;
 											setup_postdata( $post );
@@ -90,7 +86,7 @@ get_header(); ?>
 												<?php if ( ($current_post_index % 3) == 1 ): ?><div class="row posts-row"><?php endif ?>
 
 													<div class="col-xs-12 col-sm-4">
-														<div <?php post_class('post-card small'); ?>>	
+														<div <?php post_class('post-card small'); ?>>
 															<a href="<?php the_permalink(); ?>" class="entry-thumb-link">
 																<?php the_post_thumbnail('mauer_thumb_2' ); ?>
 																<div class="entry-thumb-overlay"></div>
@@ -111,7 +107,7 @@ get_header(); ?>
 
 										<?php wp_reset_postdata(); ?>
 									<?php endforeach ?>
-	
+
 								</div>
 
 							<?php endif ?>
@@ -132,7 +128,7 @@ get_header(); ?>
 				</div>
 			</div>
 		<?php endif; ?>
-	
+
 	</div><!-- /.container -->
 </div><!-- /.section-main-content -->
 

@@ -26,10 +26,7 @@
 
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12">
-						<?php if (is_active_sidebar('widgetized-area-l') || is_active_sidebar('widgetized-area-c') || is_active_sidebar('widgetized-area-r')) {$class_to_add = " copyright-bordered";} ?>
-						<div class="copyright text-center<?php echo esc_html($class_to_add); ?>"><?php echo wp_kses_post(mauer_copyright_text()); ?></div>
-					</div>
+					
 				</div>
 			</div>
 
