@@ -1,0 +1,62 @@
+@import './colors';
+@import './custom';
+
+html { list-style: none; }
+body { color: $darkblueishgray; font-size: 1em; }
+i{ font-size: 2em; }
+img { max-width: 100%; vertical-align: middle;}
+a { color: $darkblueishgray; text-decoration: none; }
+a:focus, a:hover { color: $redpink; text-decoration: none; }
+p { color: $darkblueishgray;  }
+li { display: inline-block; margin-left: 2%; padding: 1% 2% 1% 2%; }
+li:hover {  }
+ul {  }
+nav {  }
+h1 {  }
+h2 {  }
+h3 {  }
+h4 {  }
+h5 {  }
+h6 {  }
+@-webkit-keyframes pulse {
+  25% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  75% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+
+@keyframes pulse {
+  25% {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  75% {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+
+.pulse {
+  display: inline-block;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.pulse:hover {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
