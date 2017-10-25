@@ -5,24 +5,4 @@ Description: Custom theme
 Version: 1.0
 Tags: tachyons, functional styling, blog theme, blog, orange, blue, white
 */
-@import "_partials/mixins";
-@import "_partials/variables";
-@import "_partials/typography";
-@import "_partials/custom";
-@import "_partials/color";
-
-body{
-  list-style: none;
-  font-family: 'Montserrat', sans-serif;
-}
-a{
-  text-decoration: none;
-  color: $darkgray;
-}
-a:hover{
-  color: $redpink;
-}
-.navigation li{
-  display: inline;
-  margin-left: 5%;
-}
+@import "custom_style.scss";
