@@ -5,29 +5,22 @@ Description: Custom theme
 Version: 1.0
 Tags: tachyons, functional styling, blog theme, blog, orange, blue, white
 */
-
-/*
- * Globals
- */
-
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+/* line 14, sass/style.scss */
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: gray;
-}
+  list-style: none;
+  font-family: 'Montserrat', sans-serif; }
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
-  margin-top: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  color: #333;
-}
+/* line 18, sass/style.scss */
+a {
+  text-decoration: none;
+  color: #0F0F0F; }
 
+/* line 22, sass/style.scss */
+a:hover {
+  color: #F4004A; }
 
-/*
- * Override Bootstrap's default container.
- */
+/* line 25, sass/style.scss */
+.navigation li {
+  display: inline;
+  margin-left: 5%; }
